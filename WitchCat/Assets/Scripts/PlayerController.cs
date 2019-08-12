@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour {
 		noChao = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 		if(Input.GetButtonDown("Jump") && noChao){
 			jump = true;
-			anim = SetTrigger("Pulou");
+			//anim = SetTrigger("Pulou");
 		}
 	}
 	void FixedUpdate(){
